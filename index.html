@@ -1,0 +1,115 @@
+```html id="v6e7k2"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Divya ❤️</title>
+
+<style>
+    body{
+        margin:0;
+        padding:0;
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background:black;
+        font-family:Arial;
+        overflow:hidden;
+        color:white;
+    }
+
+    video{
+        position:fixed;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        z-index:-1;
+        opacity:0.4;
+    }
+
+    .box{
+        text-align:center;
+        background:rgba(0,0,0,0.6);
+        padding:40px;
+        border-radius:20px;
+        backdrop-filter:blur(8px);
+    }
+
+    h1{
+        font-size:40px;
+    }
+
+    p{
+        font-size:20px;
+    }
+
+    button{
+        padding:12px 30px;
+        margin:15px;
+        border:none;
+        border-radius:30px;
+        font-size:18px;
+        cursor:pointer;
+    }
+
+    .yes{
+        background:#ff4d6d;
+        color:white;
+    }
+
+    .no{
+        background:white;
+        color:black;
+        position:absolute;
+    }
+</style>
+</head>
+
+<body>
+
+<video autoplay muted loop controls>
+    <source src="video.mp4" type="video/mp4">
+</video>
+
+<div class="box">
+    <h1>Divya ❤️</h1>
+
+    <p>
+        I wanted to ask you something...
+        <br><br>
+        Will you stay with me forever?
+        <br><br>
+        — Sankar
+    </p>
+
+    <button class="yes" onclick="yesMsg()">
+        Yes ❤️
+    </button>
+
+    <button class="no" id="noBtn">
+        No 💔
+    </button>
+</div>
+
+<script>
+
+function yesMsg(){
+    alert("You made Sankar the happiest person ❤️");
+}
+
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", () => {
+
+    noBtn.style.top = Math.random() * 80 + "%";
+    noBtn.style.left = Math.random() * 80 + "%";
+
+});
+
+</script>
+
+</body>
+</html>
+```
